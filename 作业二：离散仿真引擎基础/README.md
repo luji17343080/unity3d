@@ -8,51 +8,52 @@
    - 基本行为包括 Awake() Start() Update() FixedUpdate() LateUpdate()  
    - 常用事件包括 OnGUI() OnDisable() OnEnable()  
   
-代码如下：
-```  
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;  
-public class DebugTest : MonoBehaviour {
-	void Awake() {
-		Debug.Log ("Awake!");
-	}
+   代码如下：
+   ```  
+   using System.Collections;
+   using System.Collections.Generic;
+   using UnityEngine;  
+   public class DebugTest : MonoBehaviour {
+      void Awake() {
+         Debug.Log ("Awake!");
+      }
 
-	void Start() {
-		Debug.Log ("Start!");
-	}
+      void Start() {
+         Debug.Log ("Start!");
+      }
 
-	void Update() {
-		Debug.Log ("Update!");
-	}
+      void Update() {
+         Debug.Log ("Update!");
+      }
 
-	void FixeUpdate() {
-		Debug.Log ("FixeUpdate!");
-	}
+      void FixeUpdate() {
+         Debug.Log ("FixeUpdate!");
+      }
 
-	void LateUpdate() {
-		Debug.Log ("LateUpdate!");
-	}
+      void LateUpdate() {
+         Debug.Log ("LateUpdate!");
+      }
 
-	void OnGUI() {
-		Debug.Log ("OnGUI!");	
-	}
+      void OnGUI() {
+         Debug.Log ("OnGUI!");	
+      }
 
-	void OnDisable() {
-		Debug.Log ("OnDisable");
-	}
+      void OnDisable() {
+         Debug.Log ("OnDisable");
+      }
 
-	void OnEnable() {
-		Debug.Log ("OnEnable");
-	}
-}  
-```  
+      void OnEnable() {
+         Debug.Log ("OnEnable");
+      }
+   }  
+   ```  
   
-将上述代码附给一个对象然后运行，在控制台会得到如下内容：  
+   将上述代码附给一个对象然后运行，在控制台会得到如下内容：  
   
-![](images/console.png)  
+   ![](images/console.png)  
   
-> 可以看出，基本行为中Awake函数是在对象执行脚本之初被调用，且在整个生命周期内只被调用一次；然后调用OnEnable函数激活对象，且激活之后不再调用；接着调用Start函数，  
+   > 可以看出，基本行为中Awake函数是在对象执行脚本之初被调用，且在整个生命周期内只被调用一次；然后调用OnEnable函数激活对象，且激活之后不再调用；接着在第一次进入游戏时调用Start函数；然后在Start函数调用完之后，调用Update函数（循环调用）；然后在所有的Update循环调用里面，当Update调用完之后会调用LateUpdate函数；最后OnGUI函数会在游戏循环的渲染过程中调用，而FixUpdate函数是在每个游戏循环中由物理引擎调用。  
+     
 - 查找脚本手册，了解GameObject，Transform，Component对象  
    - 分别翻译官方对三个对象的描述（Description）  
    > **GameObject**：游戏对象，是Unity场景里面所有实体的基类。  
@@ -63,6 +64,10 @@ public class DebugTest : MonoBehaviour {
       - 本题目要求是把可视化图形编程界面与 Unity API对应起来，当你在 Inspector 面板上每一个内容，应该知道对应 API。  
       - 例如：table 的对象是 GameObject，第一个选择框是 activeSelf 属性。  
    - 用UML图描述三者的关系（请使用UMLet14.1.1stand-alone版本出图）  
+     
+      ![](images/UML.png)  
+     
+
 - 整理相关学习资料，编写简单代码验证以下技术的实现：  
    - 查找对象  
    - 添加子对象  
