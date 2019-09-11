@@ -47,7 +47,12 @@ public class DebugTest : MonoBehaviour {
 	}
 }  
 ```  
-
+  
+将上述代码附给一个对象然后运行，在控制台会得到如下内容：  
+  
+![](images/console.png)  
+  
+> 可以看出，基本行为中Awake函数是在对象执行脚本之初被调用，且在整个生命周期内只被调用一次；然后调用OnEnable函数激活对象，且激活之后不再调用；接着调用Start函数，  
 - 查找脚本手册，了解GameObject，Transform，Component对象  
    - 分别翻译官方对三个对象的描述（Description）  
    > **GameObject**：游戏对象，是Unity场景里面所有实体的基类。  
