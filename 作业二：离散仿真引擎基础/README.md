@@ -1,13 +1,17 @@
-# 离散仿真引擎基础
+# 作业二：离散仿真引擎基础
 ## 问题1：简答题【建议做】
-- 解释 游戏对象（GameObjects） 和 资源（Assets）的区别与联系。  
+- 解释游戏对象（GameObjects）和资源（Assets）的区别与联系。  
 - 下载几个游戏案例，分别总结资源、对象组织的结构（指资源的目录组织结构与游戏对象树的层次结构）  
 - 编写一个代码，使用 debug 语句来验证 MonoBehaviour 基本行为或事件触发的条件   
    - 基本行为包括 Awake() Start() Update() FixedUpdate() LateUpdate()  
    - 常用事件包括 OnGUI() OnDisable() OnEnable()  
-- 查找脚本手册，了解 GameObject，Transform，Component 对象  
+- 查找脚本手册，了解GameObject，Transform，Component对象  
    - 分别翻译官方对三个对象的描述（Description）  
-   - 描述下图中 table 对象（实体）的属性、table 的 Transform 的属性、 table 的部件   
+   答：**GameObject**：游戏物体，是Unity场景里面所有实体的基类。  
+   **Transform**：变换，物体的位置、旋转和缩放。场景中的每一个物体都有一个Transform，用于储存并操控物体的位置、旋转和缩放。每一个Transform可以有一个父级，允许你分层次应用位置、旋转和缩放。可以在Hierarchy面板查看层次关系。他们也支持计数器（enumerator），因此你可以使用循环遍历子物体。  
+   **Component**：组件，一切附加到游戏物体的基类。  
+
+   - 描述下图中table对象（实体）的属性、table的Transform的属性、table 的部件   
       - 本题目要求是把可视化图形编程界面与 Unity API 对应起来，当你在 Inspector 面板上每一个内容，应该知道对应 API。  
       - 例如：table 的对象是 GameObject，第一个选择框是 activeSelf 属性。  
    - 用UML图描述三者的关系（请使用UMLet14.1.1stand-alone版本出图）  
