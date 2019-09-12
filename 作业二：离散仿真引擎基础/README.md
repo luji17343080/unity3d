@@ -85,15 +85,70 @@
 
 - 整理相关学习资料，编写简单代码验证以下技术的实现：  
    - 查找对象  
+      > 通过名称查找：public static GameObject Find (string name);  
+      > 通过标签查找：public static GameObject FindWithTag (string tag);  
+      > 通过类型查找：public static Object FindObjectOfType(Type type);  
+      
+      验证代码如下：  
+        
+      ![](images/find.png)  
+      **将上面脚本与Table绑定**  
+        
+      验证结果(其中对象中没有name为“chair_”的，Table的标签设置为“Finish”)：  
+
+      ![](images/jieguo.png)  
+
+
    - 添加子对象  
+      > 系统函数：public static GameObject CreatePrimitive(PrimitiveTypetype);  
+        
+      验证代码如下：  
+        
+      ![](images/add.png)  
+      **将代码拖到Table上执行**  
+        
+      验证结果：可以看到新生成一个对象newTable，类型为Cube。  
+        
+      ![](images/addjieguo.png)  
+        
+
    - 遍历对象树  
+      > 系统函数：foreach (Transform child in transform)  
+        
+      验证代码如下：  
+
+      ![](images/bianli.png)  
+      **将代码拖到Table上执行**  
+
+      验证结果：在控制台上可以看到Table的四个子对象。  
+
+      ![](images/bianlijieguo.png)  
+
+
    - 清除所有子对象  
+      > 系统函数：foreach (Transform child in transform) { Destroy(child.gameObject); }  
+        
+      验证代码如下：  
+
+      ![](images/delete.png)  
+      **将代码拖到Table上执行**  
+
+      验证结果：可以看到Table的子对象全部被清除了  
+
+      ![](images/deletejieguo.png)  
+        
 - 资源预设（Prefabs）与 对象克隆 (clone)  
    - 预设（Prefabs）有什么好处？  
       > 答：1、使对象和资源能够被重复利用；2、能够快速生成相同的游戏对象，节省了开发时间；3、能够通过修改预设修改所有的生成对象，这样就不需要对某些具体的对象进行多处修改了。  
    - 预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系？  
       > 答：预设和对象克隆都可以快速生成相同的游戏对象，但对象克隆生成的对象不会随着源对象的改变而改变，预设生成的新对象会随着预设的改变而改变。  
    - 制作table预制，写一段代码将table预制资源实例化成游戏对象  
+      - 首先制作table的预制：直接将table实体拖到Assets中即可；
+      ![](images/ASS.png)  
+      - 然后是脚本代码：创建一个空的游戏实体，直接在Start函数中调用系统函数Instantiate即可；
+      ![](images/pre.png)  
+      - 最后利用脚本实现对预制table的实例化，先将脚本拖到Main Camera，然后在组件中找到脚本，将table的预制拖到脚本中的选项“T”（脚本中创建的GameObject）上，最后点击执行就会生成一个预制的实例。**注意不要将脚本拖到预制上执行，不然会造成自己调用自己出现无限循环**  
+      ![](images/shili.png)  
   
 ## 问题2：编程实践，小游戏  
 - 游戏内容： 井字棋或贷款计算器或简单计算器等等  
@@ -112,7 +167,15 @@
       > **答：组合模式，将对象组合成树形结构以表示“部分-整体”的层次结构，使得用户对单个对象和组合对象的使用具有一致性。有时候又叫做部分-整体模式，它使我们树型结构的问题中，模糊了简单元素和复杂元素的概念，客户程序可以像处理简单元素一样来处理复杂元素,从而使得客户程序与复杂元素的内部结构解耦。**  
 
    - 使用 BroadcastMessage() 方法，向子对象发送消息。你能写出 BroadcastMessage() 的伪代码吗?  
-      > 答：
+      - 父类代码：  
+      ![](images/father.png)  
+         将该脚本拖到父对象table上。  
+
+      - 子类代码：  
+      ![](images/son.png)  
+         将该脚本拖到子对象chair上。  
+      - 最后点击执行，在控制台会得到输出“Father: Hello son!”，说明父类将Message传给了子类。   
+      ![](images/msg.png)  
 - 一个游戏对象用许多部件描述不同方面的特征。我们设计坦克（Tank）游戏对象不是继承于GameObject对象，而是 GameObject 添加一组行为部件（Component）。  
    - 这是什么设计模式？  
       > **答：装饰器模式（Decorator Pattern）。**  
