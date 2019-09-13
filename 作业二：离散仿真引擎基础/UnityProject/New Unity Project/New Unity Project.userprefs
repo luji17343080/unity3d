@@ -1,0 +1,22 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Codes\DeleteObject.cs">
+    <Files>
+      <File FileName="Assets\Codes\Table_.cs" Line="9" Column="14" />
+      <File FileName="Assets\Codes\DebugTest.cs" Line="15" Column="25" />
+      <File FileName="Assets\Codes\father.cs" Line="17" Column="1" />
+      <File FileName="Assets\Codes\EmptyClass.cs" Line="1" Column="1" />
+      <File FileName="Assets\Codes\son.cs" Line="21" Column="1" />
+      <File FileName="Assets\Codes\FindObject1.cs" Line="24" Column="1" />
+      <File FileName="Assets\Codes\AddObject.cs" Line="18" Column="1" />
+      <File FileName="Assets\Codes\ForObject.cs" Line="19" Column="1" />
+      <File FileName="Assets\Codes\DeleteObject.cs" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\Unity\Projects\New Unity Project\Assets\Codes\Table_.cs" line="16" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
