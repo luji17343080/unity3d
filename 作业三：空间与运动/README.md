@@ -2,7 +2,20 @@
 ## 1、简答并用程序验证【建议做】
 - 游戏对象运动的本质是什么？
      > 游戏对象的运动，实质上是游戏对象相对于原来位置或者相对于其他游戏对象位置的改变，对应transform组件中的position、rotation和scale等属性的变化。 
-- 请用三种方法以上方法，实现物体的抛物线运动。（如，修改Transform属性，使用向量Vector3的方法…）
+- 请用三种方法以上方法，实现物体的抛物线运动。（如，修改Transform属性，使用向量Vector3的方法…）  
+    - 一、直接改变transform组件的position属性  
+      
+        ![](images/move1.png)  
+      
+    - 二、利用transform的translate方法，分别实现物体在x轴方向上和y轴方向上的移动，通过两个方向运动的合成达到抛物线运动的效果。 
+
+        ![](images/move2.png)  
+           
+    - 三、利用物体的rigidbody组件，通过rigidbody组件的MovePosition方法实现物体的抛物线运动  
+      
+        ![](images/move3.png)  
+          
+
 - 写一个程序，实现一个完整的太阳系， 其他星球围绕太阳的转速必须不一样，且不在一个法平面上。
 ## 2、编程实践
 **需求：**
