@@ -24,11 +24,10 @@
     > 环境（environment：包括rightshore（右岸）、leftshore（左岸）、river（河））、3个恶魔（devil）、3个牧师（priest）、船（boat）
 
 - 用表格列出玩家动作表（规则表），注意，动作越少越好  
- 姓名|技能|排行
---|:--:|--:
-刘备|哭|大哥
-关羽|打|二哥
-张飞|骂|三弟
+  
+    ![](images/table.png)  
+      
+
 - 请将游戏中对象做成预制  
   
     ![](images/pre.png)  
