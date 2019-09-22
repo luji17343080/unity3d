@@ -122,6 +122,6 @@
   
     ![](images/UI.png)  
   
-### 演示视频地址：
+### 演示视频地址：http://www.iqiyi.com/w_19s9npb15h.html  
 ## 3、思考题【选做】
 - 使用向量与变换，实现并扩展 Tranform 提供的方法，如 Rotate、RotateAround 等
