@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\firstSceneController.cs">
+    <Files>
+      <File FileName="Assets\script\SSActionManager.cs" Line="39" Column="26" />
+      <File FileName="Assets\script\CCActionManager.cs" Line="17" Column="3" />
+      <File FileName="Assets\script\Director.cs" Line="35" Column="2" />
+      <File FileName="Assets\script\CCBoatMoving.cs" Line="9" Column="31" />
+      <File FileName="Assets\script\CCPeopleAction.cs" Line="5" Column="29" />
+      <File FileName="Assets\script\firstSceneController.cs" Line="120" Column="5" />
+      <File FileName="Assets\script\GuiCtrl.cs" Line="23" Column="18" />
+      <File FileName="Assets\script\solveClick.cs" Line="21" Column="11" />
+      <File FileName="Assets\script\SSAction.cs" Line="25" Column="46" />
+      <File FileName="Assets\script\Judge.cs" Line="19" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
