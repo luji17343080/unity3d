@@ -48,7 +48,6 @@
 ![](images/aim.png)  
   
 - 巡逻兵的移动  
-  
 ![](images/move.png)  
   
 - 巡逻兵信息的重置  
@@ -80,7 +79,7 @@
 包括两个分事件：1、碰到patrol； 2、碰到score。事件的设置如下（需要调用EventManager中的两个函数）  
 ![](images/peng.png)  
   
-EventManager函数  
+- EventManager函数  
 ![](images/event.png)  
   
 ## PlayerController.cs
