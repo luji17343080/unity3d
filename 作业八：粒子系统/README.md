@@ -1,6 +1,6 @@
 # 作业八：粒子系统  
 ## 简单粒子制作  
-### 演示视频链接：
+### 演示视频链接：http://www.iqiyi.com/w_19sb0avz7x.html  
 ### 1、背景添加  
 为了让最终的粒子系统更好的呈现，先添加一个背景：
 - 先在Hierarchy界面创建一个空的GameObject，命名为“Background”，在其Inspector中“Add Component -> Rendering -> GUI Texture”，并将该对象的Layer同样命名为“Background”  
