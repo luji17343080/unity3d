@@ -1,6 +1,6 @@
 # 作业十：游戏智能
 ## 坦克对战游戏AI设计  
-## 演示视频：
+## 演示视频链接：http://www.iqiyi.com/w_19sb5xk8i9.html
 ### 要求
 从商店下载游戏：“Kawaii” Tank 或 其他坦克模型，构建 AI 对战坦克。具体要求
 - 使用`“感知-思考-行为”`模型，建模 AI 坦克
@@ -96,7 +96,7 @@ public class Track : MonoBehaviour
 
 ![](images/10.png)  
 
-运行游戏，结果如[视频]()
+运行游戏，结果如[视频](http://www.iqiyi.com/w_19sb5xk8i9.html)
 
 
 
