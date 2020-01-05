@@ -26,7 +26,7 @@
 
 在原来的基础上添加一些房子和`Tank`：
 
-![](images/3.png)  
+![](images/3.png)
 
 最后导入`Unity->Editor->Standard Assets`中的如下包：
  
